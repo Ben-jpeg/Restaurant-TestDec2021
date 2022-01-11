@@ -1,0 +1,388 @@
+/* Balises principales*/
+html {
+    height: 100%;
+    width: 100%;
+   
+}
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+h3 {
+    text-align: center;
+}
+
+header {
+    flex-direction:row ;
+    background-color: rgb(95, 95, 95);
+    position: fixed;
+    z-index: 99;
+    opacity: 75%;
+    width: 100%;
+    height: 93px;    
+}
+
+header ul {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+
+header ul li{
+    margin: 16px;
+}
+
+h2 {
+    margin-top: 10%;
+    font-size: 45px;
+    color: gold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    padding: 2%;
+}
+
+section {
+    margin-top: 0%;
+}
+
+article {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+a {
+   text-decoration: none;
+   
+}
+
+hr {
+    width: 77%;
+    margin: auto;
+    margin: 10%;  
+}
+
+
+
+/*Header*/
+.name {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bolder;
+    font-size: 34px;
+    color: goldenrod;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 0%;
+    
+}
+
+.logoFourchette {
+width: 10%;
+margin: 0%;
+padding: 0%;
+}
+
+.headerdroite{
+    font-size: 18px;
+    color: white;
+}
+
+.headerdroite li a {
+    color: white;
+}
+
+
+
+/*Body*/
+.carousel-inner {
+    height: 812px;
+}
+
+
+.carouselSection {
+    width: 95%;
+    margin: auto;
+    opacity: 0.95;
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+}
+
+/* .bienvenue {
+    margin-top: 18%;
+    font-size: 45px;
+    color: gold;
+} */
+
+.intro {
+    margin-top: 5%;
+}
+
+.recipie {
+    color: gold;
+}
+
+.imgbody {
+    height:250px;
+    width: 440px;
+    border: solid 65% white;
+    border-radius: 1%;
+}
+
+
+.textSide {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.picSide {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.textSection .sectionTitle {
+    font-size: 25px;
+    text-align: right;
+    font-weight: bold;
+    color: rgb(199, 186, 10);
+}
+
+.textSection .sectionDesc {
+    font-size: 19px;
+    text-align: left;
+}
+
+.livreLink {
+    color: rgb(199, 186, 10);
+}
+
+.punchline {
+    padding-top: 12%;
+    padding-bottom: 12%;
+    font-size: 27px;
+}
+
+.comPosted {
+    font-size: 30px;
+    color: rgb(53, 52, 0);
+    text-shadow: 0px 10px 20px green, 0 0 7em greenyellow, 0 0 1.6em greenyellow;
+    margin-bottom: 18%;
+    margin-top: 6%;
+    
+}
+
+.pageBack {
+font-size: 19px;
+color: black;
+text-shadow: gold 1px 2px;
+text-align: center;
+} 
+
+.divBack {
+    text-align: right;
+}
+
+
+
+
+/*Footer*/
+.logobdp1 {
+    height: 79px;
+    width: 75px;
+    padding: 3%;
+}
+
+.logobdp2 {
+    height: 60px;
+    width: 87px;
+    padding: 3%;
+}
+
+.footersect1 {
+    background-color: rgb(148, 148, 148);
+    padding: 0%;
+    
+    color: black;
+
+}
+
+.footersect2 {
+    background-color: rgb(44, 44, 44);
+    border: 2mm ridge goldenrod;
+    padding: 0%;
+    color: white;
+    
+
+}
+
+
+/* Classes réutilisables */
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.jsca {
+    justify-content: space-around;
+}
+
+.tacenter {
+    text-align: center;
+}
+
+.aic {
+    align-items: center;
+}
+
+
+
+/* Hover */
+.headerdroite li a:hover {
+    color: gold;
+}
+
+.recipie:hover {
+        color: rgb(255, 244, 142);
+        font-weight: bold;
+        text-shadow:rgba(65, 65, 65, 0.781) 1px 0 2px;
+       /* background-color: rgb(233, 233, 233); */
+}
+
+.picSide:hover {
+    box-shadow: 5px 2px 2px rgb(235, 220, 11);;
+}
+
+.textSection .sectionTitle:hover {
+    font-size: 25px;
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(255, 242, 62, 0.486);
+}
+
+.livreLink:hover {
+    color: rgb(199, 186, 10);
+}
+
+.pageBack:hover {
+    color: goldenrod ;
+}
+
+
+
+/* Medi@Queries */
+@media (max-width: 50rem) {
+
+    header {
+        height: 70px;
+    }
+
+    article {
+        flex-wrap: wrap;
+        
+    }
+
+    .logoFourchette {
+        visibility: hidden;
+        }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .headerdroite{
+        font-size: 14px;
+        color: white;
+    }
+
+    .carousel-inner {
+        height: 0%;
+    }
+
+.carousel {
+    margin-top: 18%;
+}
+
+    .imgbody {
+        height:200px;
+        width: 340px; 
+    }
+  }
+    
+ 
+ /* Etoiles************* */ 
+ *{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:2em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:28px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover ~ label,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/* fin Etoiles************* */
+
+
+
+/*-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+blockquote {
+
+ font-family: Georgia, serif;
+ font-size: 18px; 
+ font-style: italic;
+ width: 60%;
+ position: relative;
+ color: #000000;
+ background-color: rgb(252, 227, 85);
+ border: 1px solid;
+ 
+}
+
